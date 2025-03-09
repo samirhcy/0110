@@ -1,0 +1,55 @@
+/*
+	this is for visibility. every visibilty function need a seperate css for them. it also needs serial. and have two function
+    hidden and continueButton.visible and 
+*/
+
+
+
+
+/* visible */
+
+/* 1 */
+.hidden {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  #continueButton.visible {
+	opacity: 1;
+  }
+/* 2 */
+.hidden0 {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  #continueButton0.visible0 {
+	opacity: 1;
+  }
+/* 3 */
+.hidden1 {
+	opacity: 0;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  #continueButton1.visible1 {
+	opacity: 1;
+  }
+/* 4 */
+/* 5 */
+/* 6 */
+/* 7 */
+/* 8 */
+/* 9 */
+/* 10 */
+
+
+/* Hidden   
+  .visible {
+	opacity: 1;
+	transition: opacity 0.5s ease-in-out;
+  }
+  
+  #continueButton.hidden {
+	opacity: 0;
+  }*/

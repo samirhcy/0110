@@ -1,0 +1,256 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>0110.in</title>
+	  <meta property="og:image" content="images/post1.jpg">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="627">
+		<link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+		<link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<div class="content">
+							<div class="inner">
+								<h1>0110</h1>
+								<h2>ChronoMaze</h2>
+								<h3>Road to unknown</h3>
+								<h3>Stage 6</h3>
+								<h3>Code V</h3>
+							</div>
+						</div>
+						<nav>
+							<audio id="clickSound" src="click.mp3"></audio>
+							<audio id="clickSound2" src="click2.mp3"></audio>
+						<audio id="clickSound4" src="on2.wav" type="audio/mp3" ></audio>
+							<ul>
+								<li><a href="#story" id="button" onclick="playClickSound()">Enter</a></li>
+								<li><a href="#" id="button" onclick="playClickSound2()">No Music</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+						
+						<!--<article id="server">
+							<h2 class="major">Stage Code</h2>
+							<section>
+	
+								<form id="myForm5">
+									<div class="fields">
+										<div class="field">
+											<label for="code">Stage Code:</label>
+											<input type="text" id="code5" name="code" onclick="playClickSound()">
+										</div>
+		
+										
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
+									</ul>
+								</form>
+							</section>
+						</article>-->
+						<article id="story">
+							<h2 class="major"><..></h2>
+							<h3>Backstory</h3>
+							<p>The stage 5 was so easy, but this stage seems empty to me.</p>
+							<ul class="actions">
+							  <li><a href="#obj" class="button small" onclick="playClickSound()">proceed</a></li>
+							</ul>
+						</article>
+
+						<article id="obj">
+							<h2 class="major">Objective</h2>
+							<h3>Read it carefully</h3>
+							<ol>
+								<li>The instructions are given in the video as a poem.</li>
+								<li>The only clue is in the Puzzle name.</li>
+								<li>Form a 6 digit number from the given video and instructions and enter to continue in the next stage.</li>
+							</ol>
+							<h4>Goodluck!!</h4>
+							<ul class="actions">
+							  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Next</a></li>
+							</ul>
+						</article>
+
+						<!-- Work -->
+							<article id="puzzle">
+								<h2 class="major"><..></h2>
+								<h3>Puzzle 017-Time Lapse</h3>
+								<span class="image main">
+									<video width="100%" height="auto" controls>
+										<source src="video.mp4" type="video/mp4">
+									  Your browser does not support the video tag.
+									  </video>
+								</span>
+									<hr>
+									<section>
+			
+										<form id="myForm2">
+											<div class="fields">
+												<div class="field">
+													<label for="code">Enter code to Pass:</label>
+													<input type="text" id="code2" name="code" onclick="playClickSound()" >
+												</div>
+				
+												
+											</div>
+											<ul class="actions">
+												<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()" /></li>
+												<li><input type="reset" value="Try again" class="button small" onclick="playClickSound()" /></li>
+											</ul>
+										</form>
+									</section>
+									
+									<ul class="actions">
+										<li><a href="#obj" class="button small">Objective</a></li>
+									</ul>
+							</article>
+							<article id="progress">
+								<h2 class="major">Congrats!</h2>
+								<p>You've made it to the Stage 7 of the game. Complete and submit the below form <b>before Continuing</b> to the next stage. Other-wise <b>you'll lose your progress</b> in stage 1.</p>
+								<ul class="actions">
+									<li><a href="192532.html" class="button small" onclick="playClickSound()">Continue</a></li>
+								</ul>
+							</article>
+						
+
+
+						
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright"><a href="https://html5up.net">About</a></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+		
+		  <script>
+			document.getElementById("myForm5").addEventListener("submit", validateForm);
+		  
+			function validateForm(event) {
+			  event.preventDefault(); // Prevent form submission
+		  
+			  // Get the entered code
+			  var enteredCode = document.getElementById("code5").value;
+		  
+			  // Compare the entered code with the stored code
+			  var storedCode = "ext504"; // Replace with your actual stored code
+		  
+			  if (enteredCode === storedCode) {
+				// Code is valid, redirect to the desired page
+				window.location.href = "#story"; // Replace with your actual page URL
+			  } else {
+				// Code is invalid, display an error message
+				alert("Invalid Access Code. Please try again.");
+			  }
+			}
+		  </script>
+		  <script>
+			document.getElementById("myForm2").addEventListener("submit", validateForm);
+		  
+			function validateForm(event) {
+			  event.preventDefault(); // Prevent form submission
+		  
+			  // Get the entered code
+			  var enteredCode = document.getElementById("code2").value;
+		  
+			  // Compare the entered code with the stored code
+			  var storedCode = "192532"; // Replace with your actual stored code
+		  
+			  if (enteredCode === storedCode) {
+				// Code is valid, redirect to the desired page
+				window.location.href = "#progress"; // Replace with your actual page URL
+			  } else {
+				// Code is invalid, display an error message
+				alert("Invalid Access Code. Please try again.");
+			  }
+			}
+		  </script>
+		  <script>
+			function playClickSound() {
+		var clickSound = document.getElementById("clickSound");
+		clickSound.play();
+		}
+		
+		  </script>
+		  <script>
+			function playClickSound2() {
+		var clickSound = document.getElementById("clickSound2");
+		clickSound.play();
+		}
+		
+		  </script>
+		  <script>
+			function playClickSound3() {
+		var clickSound = document.getElementById("clickSound3");
+		clickSound.play();
+		
+		}
+		
+		  </script>
+		  <script>
+			function playClickSound4() {
+		var clickSound = document.getElementById("clickSound4");
+		clickSound.play();
+		
+		}
+		
+		  </script>
+		  <script>
+		    const bgContainer = document.querySelector('#bg');
+
+const video = document.createElement('video');
+video.src = 'vid2.mp4';
+video.autoplay = true;
+video.loop = true;
+video.muted = true;
+
+bgContainer.appendChild(video);
+
+
+		  </script>
+		  <script>
+		    window.addEventListener('load', () => {
+  const audio = new Audio();
+  audio.src = 'on2.wav';
+  audio.play();
+});
+
+		  </script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/dist/typecadence.js"></script>
+
+	</body>
+</html>
+			

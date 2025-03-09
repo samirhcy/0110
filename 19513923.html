@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<!--
+	Dimension by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>0110.in</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<link href='https://fonts.googleapis.com/css?family=Inconsolata' rel='stylesheet'>
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<style>
+			
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<!--<div class="logo">
+							<span class="icon fa-gem"></span>
+						</div>-->
+						<div class="content">
+							<div class="inner">
+								<h1>0110</h1>
+								<h2>ChronoMaze</h2>
+								<h3>Road to unknown</h3>
+								<h3>Stage 5</h3>
+								<h3>It's Brained</h3>
+							</div>
+						</div>
+						<nav>
+							<audio id="clickSound" src="click.mp3"></audio>
+							<audio id="clickSound2" src="click2.mp3"></audio>
+						<audio id="clickSound4" src="on2.wav" type="audio/mp3" ></audio>
+						  <audio id="clickSound3" src="monster.mp3" type="audio/mpeg" loop></audio>
+							<ul>
+								<li><a href="#story" id="button">Enter</a></li>
+								<li><a href="#" id="button" onclick="playClickSound3()">Music</a></li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!--<article id="server">
+							<h2 class="major">Stage Code</h2>
+							<section>
+	
+								<form id="myForm5">
+									<div class="fields">
+										<div class="field">
+											<label for="code">Stage Code:</label>
+											<input type="text" id="code5" name="code" onclick="playClickSound()">
+										</div>
+		
+										
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()"/></li>
+									</ul>
+								</form>
+							</section>
+						</article>-->
+						<article id="story">
+							<h2 class="major"><..></h2>
+							<h3>Backstory</h3>
+							<p>That was a massive escape. the puzzles were so much hard that I thought I'll be locked in that room forever.</p>
+							<p>Thanks to my wit. I managed to escape. But did I complete stage 4 or not?</p>
+							<ul class="actions">
+							  <li><a href="#obj" class="button small" onclick="playClickSound()">proceed</a></li>
+							</ul>
+						</article>
+
+						<article id="obj">
+							<h2 class="major">Objective</h2>
+							<h3>Read it carefully</h3>
+							<ol>
+								<li>The task is simple. Find the number according to the given instrution.</li>
+							</ol>
+							<h4>Goodluck!!</h4>
+							<ul class="actions">
+							  <li><a href="#puzzle" class="button small" onclick="playClickSound()">Next</a></li>
+							</ul>
+						</article>
+
+						<!-- Work -->
+						<article id="puzzle">
+							<h2 class="major"><..></h2>
+							<h3>Puzzle 016-The Code</h3>
+							<p>A five digit number,<br>-The ones place digit is the summation of the game title number.<br>-The tens place digit is the 5th consecutive number of the ones place's digit<br>
+							-The hundreds place digit is the ones place digit of the summation of the ones and tens place of the original number multiplied by 3<br>
+							-The thousands place is the ones place digit of twice the 3rd prime number.<br>-The ten thousands place is the number which is alone in nature.<br><br>
+							But the original number is the reverse of the derived number.<b><i>(The ones place must be taken from the right to get the number)</i></b><br>
+							What is the number? </p><hr><hr>
+							<h2 class="major">The code</h2>
+
+							<section>
+			
+								<form id="myForm2">
+									<div class="fields">
+										<div class="field">
+											<label for="code">Enter number to unlock:</label>
+											<input type="text" id="code2" name="code" onclick="playClickSound()" >
+										</div>
+		
+										
+									</div>
+									<ul class="actions">
+										<li><input type="submit" value="Submit" class="button small" onclick="playClickSound()" /></li>
+										<li><input type="reset" value="Try again" class="button small" onclick="playClickSound()" /></li>
+									</ul>
+								</form>
+							</section>
+							
+
+						</article>
+						<article id="progress">
+							<h2 class="major">Congrats!</h2>
+							<p>You've made it to the Stage 6 of the game. Complete and submit the below form <b>before Continuing</b> to the next stage. Other-wise <b>you'll lose your progress</b> in stage 1.</p>
+							<ul class="actions">
+								<li><a href="0000.html" class="button small" onclick="playClickSound()">Continue</a></li>
+							</ul>
+						</article>
+
+					
+
+						
+
+					</div>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<p class="copyright"><a href="https://html5up.net">About</a></p>
+					</footer>
+
+			</div>
+
+		<!-- BG -->
+			<div id="bg"></div>
+
+		<!-- Scripts -->
+			<script>
+				const button = document.querySelector("#button");
+const icon = document.querySelector("#button > i");
+const audio = document.querySelector("audio");
+
+button.addEventListener("click", () => {
+  if (audio.paused) {
+    audio.volume = 0.2;
+    audio.play();
+    icon.classList.remove('fa-volume-up');
+    icon.classList.add('fa-volume-mute');
+    
+  } else {
+    audio.pause();
+    icon.classList.remove('fa-volume-mute');
+    icon.classList.add('fa-volume-up');
+  }
+  button.classList.add("fade");
+});
+			</script>
+			<script>
+				document.getElementById("myForm5").addEventListener("submit", validateForm);
+			  
+				function validateForm(event) {
+				  event.preventDefault(); // Prevent form submission
+			  
+				  // Get the entered code
+				  var enteredCode = document.getElementById("code5").value;
+			  
+				  // Compare the entered code with the stored code
+				  var storedCode = "htp001"; // Replace with your actual stored code
+			  
+				  if (enteredCode === storedCode) {
+					// Code is valid, redirect to the desired page
+					window.location.href = "#story"; // Replace with your actual page URL
+				  } else {
+					// Code is invalid, display an error message
+					alert("Invalid Access Code. Please try again.");
+				  }
+				}
+			  </script>
+			  <script>
+				document.getElementById("myForm2").addEventListener("submit", validateForm);
+			  
+				function validateForm(event) {
+				  event.preventDefault(); // Prevent form submission
+			  
+				  // Get the entered code
+				  var enteredCode = document.getElementById("code2").value;
+			  
+				  // Compare the entered code with the stored code
+				  var storedCode = "10772"; // Replace with your actual stored code
+			  
+				  if (enteredCode === storedCode) {
+					// Code is valid, redirect to the desired page
+					window.location.href = "#progress"; // Replace with your actual page URL
+				  } else {
+					// Code is invalid, display an error message
+					alert("Invalid Access Code. Please try again.");
+				  }
+				}
+			  </script>
+			<script>
+				function playClickSound() {
+			var clickSound = document.getElementById("clickSound");
+			clickSound.play();
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound2() {
+			var clickSound = document.getElementById("clickSound2");
+			clickSound.play();
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound3() {
+			var clickSound = document.getElementById("clickSound3");
+			clickSound.play();
+			
+			}
+			
+			  </script>
+			  <script>
+				function playClickSound4() {
+			var clickSound = document.getElementById("clickSound4");
+			clickSound.play();
+			
+			}
+			
+			  </script>
+			<script>
+				const bgContainer = document.querySelector('#bg');
+	
+	const video = document.createElement('video');
+	video.src = 'vid2.mp4';
+	video.autoplay = true;
+	video.loop = true;
+	video.muted = true;
+	
+	bgContainer.appendChild(video);
+	
+	
+			  </script>
+			  <script>
+				window.addEventListener('load', () => {
+	  const audio = new Audio();
+	  audio.src = 'on2.wav';
+	  audio.play();
+	});
+	
+			  </script>
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="assets/js/dist/typecadence.js"></script>
+
+	</body>
+</html>
+			
